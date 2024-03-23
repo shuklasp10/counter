@@ -1,0 +1,63 @@
+/* 1. Center the main container */
+.App {
+  display: flex;
+  flex-direction: column;  /* Arrange items vertically */
+  align-items: center;     /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100vh;           /* Make it take up full screen height */
+}
+
+/* 2. Style the counter buttons and heading */
+.Counter {
+  display: flex;           /* Arrange items in a row */
+  align-items: center;     /* Vertically center */
+  gap: 10px;               /* Spacing between elements */
+}
+
+/* 3. Style the action buttons */
+.Counter + div { 
+  display: flex;
+  gap: 10px;        
+}
+
+.Records {
+  border: 1px solid #ccc;  
+  padding: 15px;
+  margin-top: 20px;       
+}
+
+.Records li {
+  display: flex;
+  align-items: center;    
+}
+
+
+.btn-minus, 
+.btn-add, 
+.btn-reset, 
+.btn-submit, 
+.btn-clear {
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px; 
+  cursor: pointer;     
+}
+
+.btn-minus:hover, 
+.btn-add:hover, 
+.btn-reset:hover, 
+.btn-submit:hover, 
+.btn-clear:hover {
+  background-color: #3e8e41; 
+} 
+
+.RecordItem {
+  list-style: none;
+  text-align: center;
+  margin: 5px 0;
+}
